@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Emp {
+abstract class Emp {
     int id;
     String name;
     int age;
@@ -30,16 +30,19 @@ class Emp {
         System.out.println("Designation:\t" + designation);
     }
 
-    void raiseSalary() {
-        System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
-        salary=(float)(salary*1.1);
-    }
+    abstract void raiseSalary();
 }
 
 class Dev extends Emp {
     Dev() {
         designation = "Developer";
         salary = 1200000;
+    }
+    void raiseSalary(){
+        
+            System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
+            salary=(float)(salary*1.1);
+        
     }
 }
 
@@ -48,6 +51,12 @@ class Clerk extends Emp {
         designation = "Clerk";
         salary = 600000;
     }
+    void raiseSalary(){
+        
+        System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
+        salary=(float)(salary*1.1);
+    
+    }   
 }
 
 class Manager extends Emp {
@@ -55,6 +64,12 @@ class Manager extends Emp {
         designation = "Manager";
         salary = 1800000;
     }
+    void raiseSalary(){
+        
+        System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
+        salary=(float)(salary*1.1);
+    
+    }  
 }
 
 class Tester extends Emp {
@@ -62,6 +77,12 @@ class Tester extends Emp {
         designation = "Tester";
         salary = 700000;
     }
+    void raiseSalary(){
+        
+        System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
+        salary=(float)(salary*1.1);
+    
+    }  
 }
 
 public class MethodOverridingProject {
