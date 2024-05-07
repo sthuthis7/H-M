@@ -3,7 +3,7 @@ public class Demo2 {
     public static void main(String[] args) {
         int choice=0;
         Scanner sc = new Scanner(System.in);
-        do{
+        do{ 
             System.out.println("-----------------Available choices-----------------\n1. Developer\n2. Clerk\n3. Exit");
             System.out.println("---------------------------------------------------");
             System.out.print("Enter your choice: ");
