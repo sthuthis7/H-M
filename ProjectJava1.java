@@ -30,7 +30,7 @@ abstract class Emp {
         System.out.println("Designation:\t" + designation);
     }
 
-    abstract void raiseSalary();
+    abstract void raiseSalary(); //Abstraction is implemented!!
 }
 
 class Dev extends Emp {
@@ -85,7 +85,7 @@ class Tester extends Emp {
     }  
 }
 
-public class MethodOverridingProject {
+public class ProjectJava1 {
     public static void main(String[] args) {
         int choice1, choice2 = 0;
         Scanner sc = new Scanner(System.in);
