@@ -33,11 +33,12 @@ abstract class Emp {
     abstract void raiseSalary(); //Abstraction is implemented!!
 }
 
-class Dev extends Emp {
+final class Dev extends Emp { //making the class Final so that no other class can access and modify the Dev class
     Dev() {
         designation = "Developer";
         salary = 1200000;
     }
+    @Override
     void raiseSalary(){
         
             System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
@@ -46,11 +47,12 @@ class Dev extends Emp {
     }
 }
 
-class Clerk extends Emp {
+final class Clerk extends Emp { //making the class Final so that no other class can access and modify the Clerk class
     Clerk() {
         designation = "Clerk";
         salary = 600000;
     }
+    @Override
     void raiseSalary(){
         
         System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
@@ -59,11 +61,12 @@ class Clerk extends Emp {
     }   
 }
 
-class Manager extends Emp {
+final class Manager extends Emp { //making the class Final so that no other class can access and modify the Manager class
     Manager() {
         designation = "Manager";
         salary = 1800000;
     }
+    @Override
     void raiseSalary(){
         
         System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
@@ -72,11 +75,12 @@ class Manager extends Emp {
     }  
 }
 
-class Tester extends Emp {
+final class Tester extends Emp { //making the class Final so that no other class can access and modify the Tester class
     Tester() {
         designation = "Tester";
         salary = 700000;
     }
+    @Override
     void raiseSalary(){
         
         System.out.println("---------------------------------------------------\n-------------!Salary has been updated!-------------");
